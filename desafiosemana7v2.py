@@ -21,13 +21,15 @@ while op == "s" or desclassificado == False:
     print("Vez de número: ", vezes)
     player_choice = int(input("\nDigite o número: "))
 
-    if player_choice >= limite_maior or player_choice <= limite_menor:
-        print("Desclassificado por burlar os limites: ", limite_menor, limite_maior)
+    if player_choice > limite_maior or player_choice < limite_menor:
+        print("\nDesclassificado por burlar os limites: ", limite_menor, limite_maior)
 
         op2 = input("\nDeseja jogar novamente? (s ou n): ")
     
         if op2 == "s":
             vezes = 1
+            limite_menor = 1
+            limite_maior = 100
             cpu_choice = randint(1, 100)
 
         else:
@@ -54,6 +56,8 @@ while op == "s" or desclassificado == False:
 
         if op2 == "s":
             vezes = 1
+            limite_menor = 1
+            limite_maior = 100
             cpu_choice = randint(1, 100)
 
         else:
@@ -71,8 +75,6 @@ while op == "s" or desclassificado == False:
             print("\nDIGITE UM NÚMERO MAIOR")
 
             limite_menor = player_choice + 1
-
-            aux = player_choice
         
         vezes += 1
 
@@ -83,6 +85,8 @@ while op == "s" or desclassificado == False:
 
         if op2 == "s":
             vezes = 1
+            limite_menor = 1
+            limite_maior = 100
             cpu_choice = randint(1, 100)
 
         else:

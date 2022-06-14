@@ -1,16 +1,22 @@
+from random import randint
+
 matriz = [
     ["-", "-", "-"],
     ["-", "-", "-"],
     ["-", "-", "-"]
 ]
 
-vez = 0
-
 p1_win = False
 p2_win = False
 empate = False
 
+vez = randint(0, 1)
+
+print(vez)
+
 op = input("Deseja iniciar o jogo? (s ou n): ")
+
+print("\nJogador ", vez + 1, "começa")
 
 while op == "s":
     print()
@@ -206,7 +212,3 @@ while op == "s":
 
         else:
             op = "n"
-
-        
-    
-

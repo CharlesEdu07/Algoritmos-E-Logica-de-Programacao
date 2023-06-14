@@ -5,9 +5,6 @@ email_list = []
 tel_list = []
 birthday_list = []
 
-def birthday_names():
-    
-
 def create(data):
     name_list.append(data["name"])
     email_list.append(data["email"])
